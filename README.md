@@ -20,7 +20,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Solution URL here]()
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/product-preview-card-component-using-sass-KKDL-TdXk4)
 - Live Site URL: [Live site URL here](https://mohamed-waled.github.io/Product-Preview-Card-Component/)
 
 ## My process
