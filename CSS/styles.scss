@@ -27,9 +27,8 @@ body {
   justify-content: center;
   flex-direction: column;
   .box {
-    overflow: hidden;
-    width: 48%;
-    height: 519px;
+    width: 700px;
+    height: 525px;
     background-color: $box-background-color;
     border-radius: 10px;
     display: flex;
@@ -39,7 +38,7 @@ body {
       .desktop-photo {
         width: 100%;
         .desktop {
-          max-width: 100%;
+          width: 350px;
           border-radius: 10px 0 0 10px;
         }
       }
@@ -109,66 +108,19 @@ body {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (max-width: 769px) {
   .container {
     .box {
-      width: 68%;
-    }
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    .box {
-      width: 90%;
-    }
-  }
-}
-@media (min-width: 427px) and (max-width: 768px) {
-  .container {
-    .box {
-      overflow: hidden;
-      width: 50%;
-      height: 600px;
+      width: 60%;
+      height: unset;
       flex-direction: column;
       .photo {
-        overflow: hidden;
         width: 100%;
+        height: unset;
         .desktop-photo {
           display: none;
         }
         .mobile-photo {
-          display: block;
-          .mobile {
-            max-width: 100%;
-            margin-bottom: -4rem;
-          }
-        }
-      }
-      .text {
-        width: 100%;
-        padding: 1rem;
-        .button {
-          padding: 1rem 2rem;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 426px) {
-  .container {
-    .box {
-      width: 90%;
-      height: 90vh;
-      flex-direction: column;
-      .photo {
-        width: 100%;
-        .desktop-photo {
-          display: none;
-        }
-        .mobile-photo {
-          width: 100%;
           display: block;
           .mobile {
             max-width: 100%;
@@ -179,27 +131,59 @@ body {
       .text {
         width: 100%;
         padding: 1.5rem;
+        .price {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .container {
+    .box {
+      width: 90%;
+      height: unset;
+      flex-direction: column;
+      .photo {
+        width: 100%;
+        height: unset;
+        .desktop-photo {
+          display: none;
+        }
+        .mobile-photo {
+          display: block;
+          width: 100%;
+          .mobile {
+            max-width: 100%;
+            border-radius: 10px 10px 0 0;
+          }
+        }
+      }
+      .text {
+        width: 100%;
+        padding: 2rem;
         .head {
-          font-size: 12px;
+          font-size: 14px;
         }
         h1 {
           font-size: 25px;
         }
         .description {
-          font-size: 12px;
+          font-size: 14px;
         }
         .price {
-          width: 75%;
+          width: 85%;
+          margin: 1rem 0;
           .real {
             font-size: 25px;
           }
           .fake {
-            font-size: 12px;
+            font-size: 14px;
           }
         }
         .button {
           padding: 1rem 2rem;
-          margin-top: -10px;
         }
       }
     }

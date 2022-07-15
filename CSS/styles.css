@@ -29,9 +29,8 @@ body {
           flex-direction: column;
 }
 .container .box {
-  overflow: hidden;
-  width: 48%;
-  height: 519px;
+  width: 700px;
+  height: 525px;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 10px;
   display: -webkit-box;
@@ -46,7 +45,7 @@ body {
   width: 100%;
 }
 .container .box .photo .desktop-photo .desktop {
-  max-width: 100%;
+  width: 350px;
   border-radius: 10px 0 0 10px;
 }
 .container .box .photo .mobile-photo {
@@ -121,52 +120,10 @@ body {
   color: hsl(228deg, 45%, 44%);
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (max-width: 769px) {
   .container .box {
-    width: 68%;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container .box {
-    width: 90%;
-  }
-}
-@media (min-width: 427px) and (max-width: 768px) {
-  .container .box {
-    overflow: hidden;
-    width: 50%;
-    height: 600px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .container .box .photo {
-    overflow: hidden;
-    width: 100%;
-  }
-  .container .box .photo .desktop-photo {
-    display: none;
-  }
-  .container .box .photo .mobile-photo {
-    display: block;
-  }
-  .container .box .photo .mobile-photo .mobile {
-    max-width: 100%;
-    margin-bottom: -4rem;
-  }
-  .container .box .text {
-    width: 100%;
-    padding: 1rem;
-  }
-  .container .box .text .button {
-    padding: 1rem 2rem;
-  }
-}
-@media (max-width: 426px) {
-  .container .box {
-    width: 90%;
-    height: 90vh;
+    width: 60%;
+    height: unset;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -174,12 +131,12 @@ body {
   }
   .container .box .photo {
     width: 100%;
+    height: unset;
   }
   .container .box .photo .desktop-photo {
     display: none;
   }
   .container .box .photo .mobile-photo {
-    width: 100%;
     display: block;
   }
   .container .box .photo .mobile-photo .mobile {
@@ -190,27 +147,59 @@ body {
     width: 100%;
     padding: 1.5rem;
   }
+  .container .box .text .price {
+    width: 70%;
+  }
+}
+@media (max-width: 426px) {
+  .container .box {
+    width: 90%;
+    height: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .box .photo {
+    width: 100%;
+    height: unset;
+  }
+  .container .box .photo .desktop-photo {
+    display: none;
+  }
+  .container .box .photo .mobile-photo {
+    display: block;
+    width: 100%;
+  }
+  .container .box .photo .mobile-photo .mobile {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .container .box .text {
+    width: 100%;
+    padding: 2rem;
+  }
   .container .box .text .head {
-    font-size: 12px;
+    font-size: 14px;
   }
   .container .box .text h1 {
     font-size: 25px;
   }
   .container .box .text .description {
-    font-size: 12px;
+    font-size: 14px;
   }
   .container .box .text .price {
-    width: 75%;
+    width: 85%;
+    margin: 1rem 0;
   }
   .container .box .text .price .real {
     font-size: 25px;
   }
   .container .box .text .price .fake {
-    font-size: 12px;
+    font-size: 14px;
   }
   .container .box .text .button {
     padding: 1rem 2rem;
-    margin-top: -10px;
   }
   .container .footer p {
     font-size: 9px;
