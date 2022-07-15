@@ -108,6 +108,49 @@ body {
   }
 }
 
+@media (max-width: 1025px) {
+  .container {
+    .box {
+      width: 500px;
+      height: 320px;
+      .photo {
+        width: unset;
+        .desktop-photo {
+          .desktop {
+            width: 213px;
+            border-radius: 10px 0 0 10px;
+          }
+        }
+      }
+      .text {
+        width: unset;
+        padding: 1rem;
+        .head {
+          font-size: 14px;
+        }
+        h1 {
+          font-size: 25px;
+        }
+        .description {
+          font-size: 14px;
+        }
+        .price {
+          margin: 1rem 0;
+          .real {
+            font-size: 25px;
+          }
+          .fake {
+            font-size: 14px;
+          }
+        }
+        .button {
+          padding: 0.5rem 2rem;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 769px) {
   .container {
     .box {

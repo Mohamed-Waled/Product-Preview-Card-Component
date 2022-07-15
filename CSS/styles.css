@@ -120,6 +120,44 @@ body {
   color: hsl(228deg, 45%, 44%);
 }
 
+@media (max-width: 1025px) {
+  .container .box {
+    width: 500px;
+    height: 320px;
+  }
+  .container .box .photo {
+    width: unset;
+  }
+  .container .box .photo .desktop-photo .desktop {
+    width: 213px;
+    border-radius: 10px 0 0 10px;
+  }
+  .container .box .text {
+    width: unset;
+    padding: 1rem;
+  }
+  .container .box .text .head {
+    font-size: 14px;
+  }
+  .container .box .text h1 {
+    font-size: 25px;
+  }
+  .container .box .text .description {
+    font-size: 14px;
+  }
+  .container .box .text .price {
+    margin: 1rem 0;
+  }
+  .container .box .text .price .real {
+    font-size: 25px;
+  }
+  .container .box .text .price .fake {
+    font-size: 14px;
+  }
+  .container .box .text .button {
+    padding: 0.5rem 2rem;
+  }
+}
 @media (max-width: 769px) {
   .container .box {
     width: 60%;
